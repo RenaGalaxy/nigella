@@ -1,5 +1,4 @@
 import log4js from 'log4js'
-import request from 'request-promise'
 
 const logger = log4js.getLogger()
 
