@@ -1,4 +1,6 @@
 import express from 'express'
+import * as openapi from 'express-openapi'
+import cors from 'cors'
 import fs from 'fs'
 import { errorMiddleware, errorTransformer } from './middleware'
 import log4js from 'log4js'
@@ -9,6 +11,8 @@ const app = express();
 
 const logger = log4js.getLogger('express')
 app.use(log4js.connectLogger(logger, { level: 'auto'}))
+
+app.use(cors())
 
 openapi.initialize({
     app: app,
