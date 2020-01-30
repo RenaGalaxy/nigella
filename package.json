@@ -4,6 +4,7 @@
   "description": "API code base",
   "main": "index.js",
   "scripts": {
+    "lint": "npx eslint src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
