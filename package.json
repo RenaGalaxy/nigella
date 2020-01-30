@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "foobar"
+    "url": "git+https://github.com/renagalaxy/nigella.git"
   },
   "author": "renagalaxy",
   "license": "ISC",
