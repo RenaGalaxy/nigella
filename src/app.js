@@ -2,6 +2,8 @@ import express from 'express'
 import fs from 'fs'
 import log4js from 'log4js'
 
+import pingService from './services/pingService'
+
 const app = express();
 
 const logger = log4js.getLogger('express')
@@ -11,7 +13,7 @@ openapi.initialize({
     app: app,
     apiDoc: fs.readFileSync('openapi.json', 'uft-8'),
     dependencies: {
-        
+        pingService: pingService
     }
 })
 
